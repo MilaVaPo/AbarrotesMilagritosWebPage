@@ -1,0 +1,66 @@
+* {
+   margin:0px; padding:0px; border:0px;
+} 
+body {
+   text-align:center;
+}
+#general {
+   width:800px; margin:4px auto;
+}  
+#cabecera {
+   background-color:#66d7fb ;
+}
+#navegacion {
+   background-color:#23d42e; border:green 2px solid; height:20px;
+}
+#navegacion li {
+   float:left; list-style:outside circle; margin: 0px 30px 0px 0px;
+}
+#navegacion ol {
+   margin-left: 180px; 
+}
+#contenido {
+   background-color:#a0f3f5;width:800px; float:left; 
+}
+#menu {
+      background-color:yellow; width:150px; float:left; text-align:left; margin-right:10px
+} 
+#menu li {
+   list-style:none; margin:4px 0px 4px 6px;
+}
+a {
+   color:brown; text-decoration:none;
+} 
+a:link { font-size:15px ;color:blue; text-decoration:none; font-family:Arial; } 
+a:visited { color:blue }
+a:hover {
+   color:blue; text-decoration:none;
+} 
+a:active { }
+a:hover {
+   color:purple ;text-decoration:none; background-color: silver;
+} 
+#pie {
+   background-color:#44dd22;
+}
+#pieuno {
+   background-color:brown; float:left; width:150px; height:80px;
+}
+#piedos {
+   background-color:#23d42e; float:left; width:498px;
+}
+#pietres {
+   background-color:#3c64e6; float:left; width:150px; height:80px;
+}
+p {
+   text-align:justify;
+}
+#contenido p {
+   padding:5px 10px 5px 10px; text-indent:15px; border:blue 2px solid;
+} 
+h1 {
+   font-size:1.2em; color:blue; font-weight:lighter; text-decoration:none; text-align:center;
+}
+h2 {
+   font-size:1.1em; color:blue; font-weight:lighter; text-decoration:none; text-align:center;
+} 
