@@ -1,0 +1,93 @@
+<html>
+<head> <title>Registro de Ventas</title>
+<script language="JavaScript">
+function calcularVenta()
+{
+   var p1, c1, sub1, p2, c2, sub2, t, p3, c3, sub3, imp, dcto;
+   p1= parseInt(form1.precio1.value);
+   c1= parseInt(form1.cantidad1.value);
+   sub1= p1*c1;
+   p2= parseInt(form1.precio2.value);
+   c2= parseInt(form1.cantidad2.value);
+   sub2= p2*c2;
+   p3= parseFloat(form1.precio3.value);
+   c3= parseFloat(form1.cantidad3.value);
+   sub3= p3*c3;
+   imp = sub1+sub2+sub3;
+   dcto = (sub1 + sub2 + sub3)*0.05;
+   t = imp-dcto;
+   form1.subtotal1.value= sub1;
+   form1.subtotal2.value= sub2;
+   form1.subtotal3.value= sub3;
+   form1.importe.value=imp;
+   form1.desc.value= dcto;
+   form1.total.value= t; 
+}
+</script>
+</head>
+<body bgcolor=edc040>
+<br>
+<br>
+<br>
+<br>
+  <h2 align="center"><font face="forte">REGISTRO DE VENTAS</font></h2>
+  <form name="form1" method="post" action="">
+    <table border=8 bgcolor=r2e55e align="center" bordercolor=1957ab>
+        <tr> <!-- completar datos de la empresa y cliente--!>
+        </tr>
+	<tr>
+	  <td align=center><b>PRODUCTO</b></td>
+                    <td align=center><b>PRECIO</b></td>
+                    <td align=center><b>CANTIDAD</b></td>
+                    <td align=center><b>SUBTOTAL</b></td>
+	</tr>
+<!----------------------------------Fila aceite------------------------------------------------>
+        
+        <tr>
+	  <td bgcolor="LightGreen" align=center>ACEITE</td>
+          <td><input type="text" size=6 name="precio1" value=8 readonly></td>
+          <td><input type="text" size=10 name="cantidad1"></td>
+          <td><input type="text" size=10 name="subtotal1" readonly></td> 
+       </tr>
+<!-----------------------------------fila fideos----------------------------------------------->
+        <tr>
+	  <td align = middle bgcolor="khaki">FIDEOS</td>
+          <td><input type="text" size=6 name="precio2" value=2 readonly></td>
+          <td><input type="text" size=10 name="cantidad2"></td>
+          <td><input type="text" size=10 name="subtotal2" readonly></td> 
+	</tr>
+<!-------------------------------------fila leche-------------------------------------------->
+        <tr>
+
+                     <td align = middle bgcolor="LightCoral">LECHE</td>
+          <td align=center><input type="text" size=6 name="precio3" value=3.70 readonly></td>
+          <td align=center><input type="text" size=10 name="cantidad3"></td>
+          <td><input type="text" size=10 name="subtotal3" readonly></td> 
+	</tr>
+<!------------------------------------------------------------------------------------------------>
+<tr>
+
+	  <td align=center colspan=3>IMPORTE </td>
+          <td><input type="text" size=10 name="importe" readonly></td> 
+	</tr>
+<!------------------------------------------------------------------------------------------------>
+        <tr>
+
+	  <td align=center colspan=3>DESCTO(5%) </td>
+          <td><input type="text" size=10 name="desc" readonly></td> 
+	</tr>
+<!------------------------------------------------------------------------------------------------>
+        <tr>
+	  <td align=center colspan=3>TOTAL </td>
+          <td><input type="text" size=10 name="total" readonly></td> 
+	</tr>
+<!------------------------------------------------------------------------------------------------>
+</table>
+<table border=8 bgcolor=f5e55e align="center" bordercolor=1957ab>
+<tr><td><input name="cmdcalcular" type="button" value="Calcular" onClick="calcularVenta();"></td><td><input type="reset" value="Limpiar" ></td></tr>
+</table>
+
+<br><br>
+</form>
+</body>
+</html>
