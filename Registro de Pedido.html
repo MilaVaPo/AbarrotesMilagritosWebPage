@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Registro de Pedido </title>
+ <style type="text/css">
+table{width:40px;height:30px;-webkit-border-radius: 60px;-moz-border-radius: 6px;border-radius: 60px;border:5px solid #2cc22a;}
+
+ </style>
+</head>
+<body bgcolor=#9ae1f5>
+
+ <form action="http://localhost/Factura.php" method="post">
+<table bgcolor=c3fa7c align=center cellpadding=16 >
+<tr>
+<td colspan=3 align=Center><font face="forte" size=7>Registro de Pedido</font></td>
+</tr> 
+<tr>
+<td bgcolor=3edbf3 align="right" style="-webkit-border-radius: 60px;-moz-border-radius: 6px;border-radius: 60px;border:5px solid #2cc22a;"><img src="logo_abarrotesMili.jpg" width=140 height=100%></td>
+<td colspan=2><center>"Abarrotes Milagritos"<br>Av. condorcanqui 1412 , Carabayllo<br>Telf:962267483<br>N° Pedido: 001
+</Center></td>
+
+</tr>
+<tr>
+  <td align=center colspan=2>Nombre o Empresa: </td><td><input type="text" name="nom" size=25></td><br>
+  
+</tr>
+  <td align=center colspan=2> Apellidos: </td><td><input type="text" name="apelli" size=25></td><br>
+</tr>
+  <td align=center colspan=2>Edad: </td><td><input type="text" name="edad" size=25></td><br>
+</tr>
+  <td align=center colspan=2>Direcci&oacute;n Domiciliaria: </td><td><input type="text" name="dir" size=25></td><br>
+</tr>
+  <td align=Center><font size=5><b>Producto</b></font></td>
+  <td align=Center><font size=5><b>Cantidad</b></font></td>
+  <td align=Center><font size=5><b>Precio Unitario</b></font></td>
+</tr>
+<tr>
+  <td align=center bgcolor="LightGreen"  style="-webkit-border-radius: 60px;-moz-border-radius: 6px;">Aceite </td>
+  <td><input type="text" size=20 name="cant1"></td>
+ <td align=center><input type="text" size=25 name="pre1" value=8.80$ readonly></td>
+</tr>
+<tr>
+   <td align=center bgcolor="Khaki" style="-webkit-border-radius: 60px;-moz-border-radius: 6px;">Fideos</td>
+  <td><input type="text" size=20 name="cant2"></td>
+  <td><input type="text" size=25 name="pre2" value=2.40$ readonly></td>
+</tr>
+<tr>
+    <td align=center bgcolor="LightCoral"  style="-webkit-border-radius: 60px;-moz-border-radius: 6px;">Leche </td>
+  <td><input type="text" size=20 name="cant3"></td>
+  <td><input type="text" size=25 name="pre3" value=3.70$ readonly></td>
+</tr>
+<tr>
+ <tr><td align=center><input type="submit" value="Generar Factura"></td><td><input type="reset" value="Limpiar" ></td></tr>
+</table>
+
+ </form>
+</body>
+</html>
